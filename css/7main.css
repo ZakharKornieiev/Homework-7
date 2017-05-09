@@ -1,0 +1,298 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*----------Reset END------------*/
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 900px;
+    margin: 0 auto;
+    background: url("../img/BG.jpg") 0 0 no-repeat;
+    /*border: 1px solid #000;*/
+    padding: 278px 63px 226px 63px;
+}
+.reg-form {
+    width: 100%;
+    margin: 0 auto;
+}
+[class|="btn"]{
+    width: 224px;
+    height: 60px;
+    color: #ececec;
+    text-shadow: 0.5px 0.5px 2px #000;
+    border-style: solid;
+    margin-right: 44px;
+}
+[class|="btn"]:nth-last-child(1){
+    margin-right: 0;
+}
+.text-button,
+[value="search"]{
+    font: 25px/27px American Typewriter, sans-serif;
+    text-transform: uppercase;
+}
+.row{
+      /*text-align: center;*/
+      padding-bottom: 60px;
+  }
+.row+.row{
+    /*text-align: center;*/
+    padding-bottom: 52px;
+}
+.btn-about_us{
+    border-width: 12px 9px 12px 10px;
+    -moz-border-image:    url(../img/About_Us.jpg) 12 9 12 10;
+    -webkit-border-image: url(../img/About_Us.jpg) 12 9 12 10;
+    -o-border-image:      url(../img/About_Us.jpg) 12 9 12 10;
+    border-image:         url(../img/About_Us.jpg) 12 9 12 10 fill;
+
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 3, 3),2px 3px #7c0939;
+    -moz-box-shadow:    0 0 7px rgba(0, 0, 3, 3),2px 3px #7c0939;
+    -o-box-shadow:      0 0 7px rgba(0, 0, 3, 3),2px 3px #7c0939;
+    box-shadow:         0 0 7px rgba(0, 0, 3, 3),2px 3px #7c0939;
+
+}
+.btn-portfolio{
+    margin-right: 46px;
+    border-width: 12px 9px 12px 10px;
+    -moz-border-image:    url(../img/Portfolio.jpg) 12 9 12 10;
+    -webkit-border-image: url(../img/Portfolio.jpg) 12 9 12 10;
+    -o-border-image:      url(../img/Portfolio.jpg) 12 9 12 10;
+    border-image:         url(../img/Portfolio.jpg) 12 9 12 10 fill;
+
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 3, 3),2px 3px #ac6613;
+    -moz-box-shadow:    0 0 7px rgba(0, 0, 3, 3),2px 3px #ac6613;
+    -o-box-shadow:      0 0 7px rgba(0, 0, 3, 3),2px 3px #ac6613;
+    box-shadow:         0 0 7px rgba(0, 0, 3, 3),2px 3px #ac6613;
+}
+.btn-contact{
+    border-width: 12px 9px 12px 10px;
+    -moz-border-image:    url(../img/Contact.jpg) 12 9 12 10;
+    -webkit-border-image: url(../img/Contact.jpg) 12 9 12 10;
+    -o-border-image:      url(../img/Contact.jpg) 12 9 12 10;
+    border-image:         url(../img/Contact.jpg) 12 9 12 10 fill;
+
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 3, 3),2px 3px #515b13;
+    -moz-box-shadow:    0 0 7px rgba(0, 0, 3, 3),2px 3px #515b13;
+    -o-box-shadow:      0 0 7px rgba(0, 0, 3, 3),2px 3px #515b13;
+    box-shadow:         0 0 7px rgba(0, 0, 3, 3),2px 3px #515b13;
+}
+.btn-search {
+    border-width: 12px 9px 12px 10px;
+    -moz-border-image:    url(../img/Search.jpg) 12 9 12 10;
+    -webkit-border-image: url(../img/Search.jpg) 12 9 12 10;
+    -o-border-image:      url(../img/Search.jpg) 12 9 12 10;
+    border-image:         url(../img/Search.jpg) 12 9 12 10 fill;
+
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 3, 3), 2px 3px #a3371c;
+    -moz-box-shadow:    0 0 7px rgba(0, 0, 3, 3), 2px 3px #a3371c;
+    -o-box-shadow:      0 0 7px rgba(0, 0, 3, 3), 2px 3px #a3371c;
+    box-shadow:         0 0 7px rgba(0, 0, 3, 3), 2px 3px #a3371c;
+}
+.search-input{
+    /*display: inline-block;*/
+    width: 497px;
+    height: 60px;
+    margin-right: 44px;
+    border-width: 12px 13px 12px 11px;
+    background: #f1f0f0;
+    padding:0 20px;
+    -moz-border-image:    url(../img/Search_Form1.jpg) 12 13 12 11;
+    -webkit-border-image: url(../img/Search_Form1.jpg) 12 13 12 11;
+    -o-border-image:      url(../img/Search_Form1.jpg) 12 13 12 11;
+    border-image:         url(../img/Search_Form1.jpg) 12 13 12 11;
+
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676, inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+    -moz-box-shadow:    0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676, inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+    -o-box-shadow:      0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676, inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+    box-shadow:         0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676, inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+}
+.btn-search{
+    margin-bottom: -2px;
+}
+[type|="radio"],
+[type|="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+[for|="radio"]{
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px;
+    border-radius: 50%;
+    margin-right: 25px;
+    background: url("../img/radio.png");
+    box-shadow: 0 0 8px rgba(0, 0, 3, 3), 1px 1px #767676;
+}
+[for|="radio"]:before {
+    content: "";
+    position: absolute;
+    right: 10.5px;
+    top:11px;
+    width: 14px;
+    height: 14px;
+    background: #ef512a;
+    box-shadow: 0 0 3px rgba(0, 0, 3, 3), 1px 1px #bc3f20;
+    border-radius: 50%;
+    opacity: 0;
+}
+[type|="radio"]:checked+[for|="radio"]:before{
+    opacity: 1;
+}
+[for|="checkbox"]{
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 42px;
+    text-indent: -9999px;
+    margin-right: 24px;
+    background: url("../img/chekbox_border.png");
+    box-shadow: 0 0 8px rgba(0, 0, 3, 3), 1px 1px #767676;
+}
+label[for="checkbox-2"]{
+    margin-right: 26px;
+}
+[for|="checkbox"]:hover,
+[for|="radio"]:hover,
+[class|="btn"]{
+    cursor:pointer;
+}
+[for|="checkbox"]:before {
+    position: absolute;
+    content: "";
+    right: -3.5px;
+    top:-1px;
+    width: 37px;
+    height: 37px;
+    background: url("../img/checkedchb.png");
+    opacity: 0;
+}
+[type|="checkbox"]:checked+[for|="checkbox"]:before{
+    opacity: 1;
+}
+[class|="former"]{
+    position: relative;
+    display: inline-block;
+    width: 497px;
+    height: 60px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #889922;
+    text-shadow: 0.5px 0.5px 2px #000;
+    border-style: solid;
+    border-width: 12px 13px 12px 11px;
+    -moz-border-image:    url(../img/Search_Form1.jpg) 12 13 12 11;
+    -webkit-border-image: url(../img/Search_Form1.jpg) 12 13 12 11;
+    -o-border-image:      url(../img/Search_Form1.jpg) 12 13 12 11;
+    border-image:         url(../img/Search_Form1.jpg) 12 13 12 11 fill;
+
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676;
+    -moz-box-shadow:    0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676;
+    -o-box-shadow:      0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676;
+    box-shadow:         0 0 7px rgba(0, 0, 3, 3), 2px 3px #767676;
+    margin-bottom: -35px;
+}
+.former-select select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 426px;
+    height: 38px;
+    border: none;
+    background: #f1f0f0;
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 0 20px 0 130px;
+    text-transform: uppercase;
+    font: 25px/27px American Typewriter, sans-serif;
+    color: #8e9e2f;
+    text-shadow: 0.5px 0.5px 2px #000;
+    -webkit-box-shadow: inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+    -moz-box-shadow:    inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+    -o-box-shadow:      inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+    box-shadow:         inset 2px 2px 5px 0 rgba(0,0,0,0.52);
+    z-index: 1;
+
+}
+[for|="select"]:before{
+    display: block;
+    content: "select";
+    text-transform: uppercase;
+    font: 25px/27px American Typewriter, sans-serif;
+    position: absolute;
+    top:5.5px;
+    left: 13px;
+    color: #8e9e2f;
+    text-shadow: 0.5px 0.5px 2px #000;
+    z-index: 2;
+    pointer-events: none;
+    opacity:1;
+}
+[for|="select"]:after{
+    display: block;
+    width: 30px;
+    height: 39px;
+    content: "";
+    position: absolute;
+    top:1px;
+    right:2px;
+    background: url("../img/Polygon 1and 1copy.png");
+    z-index: 3;
+    pointer-events: none;
+}
+.former-select select:focus{
+    outline: none;
+}
+.former-select select:hover{
+    cursor: pointer;
+}
+select::selection+[for|="select"]:before{
+    opacity: 0;
+}
